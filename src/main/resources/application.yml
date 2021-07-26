@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: zuul
+
+eureka:
+  client:
+    service-url:
+      defaleZone: http://localhost:8761/eureka/
+
+
+server:
+  port: 8768
