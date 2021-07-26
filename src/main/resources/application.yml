@@ -10,3 +10,12 @@ eureka:
 
 server:
   port: 8768
+zuul:
+  routes:
+#    myproduct:
+#      path: /myproduct/**
+#      serviceId: product
+    product: /myproduct/**
+#management:
+#  security:
+#    enabled: false
