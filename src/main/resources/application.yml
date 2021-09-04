@@ -19,3 +19,14 @@ zuul:
 #management:
 #  security:
 #    enabled: false
+
+ribbon:
+  ReadTimeout: 10000
+  ConnectTimeout: 10000
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 12000
